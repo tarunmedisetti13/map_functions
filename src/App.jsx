@@ -7,8 +7,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects'
-
-
+import Timer from './components/Timer'
 function App() {
   return (<>
     <Navbar />
@@ -18,6 +17,8 @@ function App() {
       <Route path='/contact' element={<Contact />} />
       <Route path='/projects' element={<Projects />} />
     </Routes>
+    <Timer />
+
   </>);
 }
 
