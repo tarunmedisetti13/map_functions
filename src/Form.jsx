@@ -18,7 +18,7 @@ const Form = () => {
             email:${formData.email}`);
     }
     return (
-        <form onSubmit={handleSubmit} className='flex flex-col gap-1 items-center '>
+        <form onSubmit={handleSubmit} className='grid h-50 place-items-center '>
             <input type="text" name='name' value={formData.name} onChange={handleChange} className='border' />
             <input type="email" name='email' value={formData.email} onChange={handleChange} className='border' />
             <button type='submit' className='border bg-blue-400 cursor-pointer'>Submit</button>

@@ -6,3 +6,8 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+
+.box {
+    border: 1px solid;
+    padding: 25px;
+}
