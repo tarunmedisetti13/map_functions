@@ -5,9 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+    max-width: 400px;
 }
 
 .box {
+    margin: 10px 10px;
     border: 1px solid;
     padding: 25px;
 }
