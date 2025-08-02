@@ -1,16 +1,18 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function useWindowWidth() {
-    const [width, setWidth] = useState(window.innerWidth);
+export default function App() {
+    const [name, setName] = useState('');
+    const [renderCount, setRenderCount] = useState(1);
 
     useEffect(() => {
-        const handleResize = () => setWidth(window.innerWidth);
+        console.log('Render with useState');
+        setRenderCount(prev => prev + 1);
+    }, [name]);
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return width;
+    return (
+        <>
+            <input value={name} onChange={(e) => setName(e.target.value)} className='border' />
+            <div>useState Render count: {renderCount}</div>
+        </>
+    );
 }
-
-export default useWindowWidth;
