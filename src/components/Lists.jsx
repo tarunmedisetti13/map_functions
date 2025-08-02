@@ -10,7 +10,7 @@ const Lists = () => {
         <div>
             <ul className='grid place-items-center'>
                 {list.map((l, index) => (
-                    <li key={l.id}>{l.name} student: <span className='font-semibold'>{String(l.student)}</span></li>
+                    <li key={l.id}>{l.name}  student: <span className='font-semibold'>{String(l.student)}</span></li>
                 ))}
             </ul>
         </div>
